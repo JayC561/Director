@@ -1,0 +1,69 @@
+@media only screen and (max-width: 700px) {
+  body nav ul{display: none;}
+
+  #menu-button{display: block;}
+
+  .social{height: 5%;
+  width: 20%;}
+
+  .social .facebook, .social .instagram{height:100%;
+  width:50%;
+  }
+
+  nav{display: flex;
+  justify-content: flex-end;}
+
+  #branding{width: 50%;
+  font-family: "Selima";
+  font-size: calc(30px + (50 - 30)*(100vw - 300px) / (800 - 300));
+  color: #FFF;
+  display: block;}
+
+  #hobby{height: 200%;
+  grid-template-rows: repeat(6,1fr);
+  grid-template-columns: repeat(1,1fr);
+  grid-gap: 2% 2%;}
+
+  .big{grid-row: span 1;}
+
+}
+
+@media only screen and (max-width: 800px){
+  .small-circle{display: none;}
+
+  #form{top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  }
+
+  #form form{align-items: center;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #form{right: 5%;
+  top: 50%;
+  transform: translateY(-50%);}
+
+  #form form{align-items: flex-start;}
+}
+
+@media only screen and (min-width: 701px){
+  #menu-button{display: none;}
+
+  .social{height: 10%;
+  width: 10%;}
+
+  .social .facebook, .social .instagram{height:100%;
+  width:30%;}
+
+  #branding{display: none;}
+
+  #hobby{height: 130%;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 2% 2%;
+  }
+
+  .big{grid-row: span 2;}
+}

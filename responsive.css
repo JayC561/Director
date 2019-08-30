@@ -29,15 +29,7 @@
 }
 
 @media only screen and (max-width: 800px){
-  .small-circle{display: none;}
-
-  #form{top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  }
-
-  #form form{align-items: center;
-  }
+  #contact{flex-direction: column;}
 }
 
 @media only screen and (min-width: 801px) {
@@ -45,7 +37,7 @@
   top: 50%;
   transform: translateY(-50%);}
 
-  #form form{align-items: flex-start;}
+  #contact{flex-direction: row;}
 }
 
 @media only screen and (min-width: 701px){
@@ -66,4 +58,21 @@
   }
 
   .big{grid-row: span 2;}
+}
+
+@media  only screen and (min-width: 515px){
+
+}
+
+
+@media  only screen and (max-width: 514px){
+
+}
+
+@media only screen and (min-width: 701px){
+
+}
+
+@media only screen and (max-width: 700px){
+
 }
